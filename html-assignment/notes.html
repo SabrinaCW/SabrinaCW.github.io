@@ -2,26 +2,43 @@
 <html lang="en-US">
     <head>
 <meta charset="UTF-8">
-<title>Sabrina Chimanski Warquentin</title> 
+<title>Sabrina Chimanski Warquentin</title>
+<link rel="stylesheet" href="css/main.css"> 
     </head>
         
     <body>
         <header> 
-        <center><h1>Sabrina Chimanski Warquentin</h1></center> 
+        <h1>Sabrina Chimanski Warquentin</h1> 
         </header> 
         
         <nav>
-            <ul>
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="notes.html">Notes</a></li>
-            </ul>
+            <a href="index.html">About Me</a>
+            <a href="notes.html" class="current">Notes</a>
         </nav>
         
-        <center>
         <main>
             <h2> Notes </h2>
- 
-            <table border="3"> 
+                
+            <section> 
+                <h3>HTML Hierarchy</h3>
+                <dl>
+                    <dt> < head > < /head > </head>  </dt>
+                    <dd> Head tag delineates information for the document. </dd>
+                    <dt> < title > < /title > </title></dt>
+                    <dd> Title tag delineates a title for the document. </dd>
+                    <dt> < body > < /body > </dt>
+                    <dd> Body tag delineates the document's body. </dd>
+                    <dt> < main > < /main > </dt>
+                    <dd> Main tag states the main content of a document. </dd>
+                    <dt> < article > < /article > </dt>
+                    <dd> Article tag delineates an article. </dd>
+                    <dt> < p > < /p > </dt>
+                    <dd> Paragraph tag delineates a paragraph. </dd>
+                </dl>
+            </section>
+            <hr>
+
+            <table class="center">
                 <caption>Contact</caption>
                 <thead>
                     <tr>
@@ -29,7 +46,7 @@
                         <th>Adress</th>
                     </tr>
                 </thead>
-    
+        
                 <tbody>
                     <tr>
                         <td>chim0026@algonquinlive.com</td>
@@ -37,6 +54,7 @@
                     </tr>
                 </tbody>
             </table>
+            
             <section>
                 <h3>Or If you want to schedule a online meet, choice your date and hour below:</h3>
                 <form action="schedule.html" method="get">
@@ -66,6 +84,5 @@
         <footer>
             Copyright &copy; Sabrina Chimanski Warquentin, 2023.
         </footer>
-        </center>
     </body>
 </html>
