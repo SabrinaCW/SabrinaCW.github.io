@@ -1,6 +1,8 @@
-/* CUSTOM STYLES*/
+/* ********************************************
+                CUSTOM STYLES
+***********************************************/
 
-/* Global Styles*/
+/* Global Styles */
 
 html {
     font-family: Arial, Helvetica, sans-serif;
@@ -25,15 +27,11 @@ body {
     clear: both;
 }
 
-.gamelist {
-    border-bottom: 1px;
-}
-
 img {
     width: 100%;
 }
 
-/*LoVe HAte - Link, Visited, Hover/Focus, Active */
+/* LoVe HAte - Link, Visited, Hover/Focus, Active */
 a,
 a:link,
 a:visited {
@@ -84,6 +82,7 @@ p {
     margin: 0 auto;
     padding: 1em;
 }
+
 /* Header */
 .mobile-logo {
     max-width: 150px;
@@ -95,7 +94,7 @@ p {
 
 .banner {
     height: 600px;
-    background: gray url(../images/smog-mobile.jpg);
+    background: grey url(../images/smog-mobile.jpg);
     background-size: cover;
 }
 
@@ -106,12 +105,36 @@ p {
     text-transform: uppercase;
 }
 
+/* Navigation */
+.nav-list li {
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+/* LoVe HAte */
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+    background-color: #00add8;
+    color: inherit;
+}
+
+
 /* Mobile App Section */
+
 .btn {
     text-decoration: none;
     display: inline-block;
     padding: 20px;
-    border: 1px solid gray;
+    border: 1px solid grey;
     border-radius: 6px;
 }
 
@@ -119,6 +142,19 @@ p {
 .btn:focus {
     background-color: #00add8;
     color: inherit;
+}
+
+/* Action Section */
+.actions-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.actions-list li {
+    max-width: 50%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 /* Footer Styles */
@@ -132,14 +168,10 @@ p {
     text-align: right;
 }
 
-.gamelist {
-    float: ;
-    border
-}
 
-/************************************
-Desktop Styles **********************************/
-
+/**************************************
+            Desktop Styles
+***************************************/
 @media screen and (min-width:600px) {
     html {
         font-size: 16px;
@@ -162,18 +194,37 @@ Desktop Styles **********************************/
         color: white;
     }
 
+    /* Navigation */
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-list li {
+        flex: 1;
+        border: none;
+        border-right: 1px solid grey;
+    }
+
+    .nav-list li:last-child {
+        border: none;
+    }
+
     /* Mobile App Section */
     .app img {
         width: 40%;
         float: left;
         margin-right: 1em;
     }
-
     .app .btn {
         float: right;
     }
 }
 
-.container {
-    lis
+/************************ 
+    MEDIA QUERY 800px
+*************************/
+@media screen and (min-width:800px) {
+    .actions-list li {
+        max-width: 20%;
+    }
 }

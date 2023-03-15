@@ -38,8 +38,10 @@ nav ul li {
   text-transform: uppercase;
 }
 
+
 .border {
-  border-right: 1px black solid;
+  border-right: 1px rgb(0, 0, 0) solid;
+  i
 }
 
 /*Article*/
