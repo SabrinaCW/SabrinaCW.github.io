@@ -1,0 +1,33 @@
+/* font-family: 'Playfair Display', serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+h1 {
+   font-family: 'Playfair Display', serif;
+   font-weight: 700;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Font Awesome Icons */
+h1 i::before {
+    font-size: 3rem;
+    color: cornflowerblue
+}
+
+.fa-thumbtack::before {
+    font-size: 3rem;
+    color: darkcyan;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
