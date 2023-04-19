@@ -2,31 +2,38 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 /* Common properties */
 
 h1 {
     font-size: 5em;
     line-height: 1.2em;
-    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
-
+    margin: 10px;
 }
 
 h2 {
     font-size: 3em;
     font-weight: 700;
+    margin: 10px;
 }
 
 h3 {
     font-size: 1.6em;
     font-weight: 700;
-    margin-bottom: 10px;
-
+    margin: 10px;
 }
 
 h4 {
     font-size: 1em;
     font-weight: 600;
+    margin: 10px;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 400;
+    margin: 10px;
 }
 
 
@@ -41,11 +48,8 @@ h4 {
 
 /* Navigation */
 .main-nav {
-    max-width: 1200px;
-    margin: 0 auto;
     background-color: #222;
-    border: 10px solid #222;
-    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #222;
     text-align: center;
 }
 
@@ -69,8 +73,10 @@ h4 {
     background-color: #c78c06;
 }
 
-.search {
-    width: 100%;
+form input {
+    width: 85%;
+    height: 50%;
+    border: none;
 }
 
 .fa {
@@ -82,59 +88,45 @@ nav button {
     border: 1px solid #c78c06
 }
 
-.banner {
+.welcome {
     background: #222 url(../images/main-banner.jpg);
-    background-size: cover;
 }
 
-.banner h1 {
-    font-size: 80px;
+.banner {
     color: white;
     background-color: #222;
+    padding: 5%;
 }
 
-header p {
+.banner div h3 p {
     color: white;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #222;
+    padding: 2em;
+    line-height: 1.5px;
 }
 
 .btn {
     background-color: #c78c06;
-    padding: 1%;
-}
-
-h2 {
-    text-align: left;
-    font-size: 28px;
-    margin-bottom: 0.5em;
-    font-family: 'Open Sans', sans-serif;
+    padding: 5%;
+    text-decoration: none;
+    color: #222;
 }
 
 .content img {
     width: 100%;
+    display: inline-block;
 }
 
 /* About Us */
 .about-us {
     border: 10px solid #ffe6ac;
     background-color: #ffe6ac;
-
+    line-height: 1.5em;
 }
 
 .about-us h2 {
     font-size: 40px;
     font-weight: bolder;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0 0 50px 0;
-}
-
-.about-us p {
-    font-family: 'Open Sans', sans-serif;
-}
-
-p {
-    font-family: 'Open Sans', sans-serif;
+    margin-top: 3%;
 }
 
 /* Our Services */
@@ -155,6 +147,14 @@ p {
 .info {
     font-family: 'Open Sans', sans-serif;
     background-color: #ffe6ac;
+}
+
+.services div p {
+    padding-bottom: 3em;
+}
+
+.fa-play {
+    padding-left: 3%;
 }
 
 /* Our Vision */
@@ -229,17 +229,16 @@ button {
 th,
 td {
     border: 1px solid #222;
-    padding: 20%;
+    padding: 1%;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
 }
 
 
-
 th {
     background-color: #c78c06;
     font-size: 25px;
-    font-style: bold;
+    font-weight: bold;
 }
 
 .map {
@@ -268,22 +267,14 @@ th {
 *****************************************/
 
 @media screen and (min-width:760px) {
-    .content {
+    .width {
         max-width: 1200px;
         margin: 0 auto;
     }
 
-    body {
-        width: 100%;
-        height: 100%;
-        font-family: 'Open Sans', sans-serif;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: large;
-    }
-
-    h2 {
-        font-size: 2em;
-        font-weight: bold;
+    .content {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     .logo {
@@ -295,28 +286,23 @@ th {
     /* Navigation*/
     .main-nav {
         background-color: #222;
-        border: 1px solid #222;
-        font-family: 'Open Sans', sans-serif;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
-    .nav-list li:nth-child(1) {
-        background-color: #222;
-    }
-
-    nav li {
-        justify-content: center;
+    .main-nav li {
         flex-grow: 1;
+        border: none;
     }
 
     .nav-list a,
     .nav-list a:link,
     .nav-list a:visited {
-        padding: 10%;
+        padding: 0%;
         text-decoration: none;
         color: #c78c06;
+        display: block;
     }
 
     .nav-list a:hover,
@@ -332,15 +318,15 @@ th {
     }
 
     nav {
-        width: 90%;
+        width: 100%;
+        height: 10%;
         border: none;
-        padding: 10px;
+        display: flex;
     }
 
     .search {
         width: 70%;
         border: none;
-        padding: 10px;
     }
 
     .fa {
@@ -354,58 +340,46 @@ th {
     }
 
     nav ul {
-        list-style: none;
-
-    }
-
-    nav ul {
-        padding: 10% 10% 10% 10%;
-        border: 10px;
-        display: inline-flex;
-        list-style: none;
         font-size: 25px;
     }
 
     /* Main Header */
-    h1 {
-        font-size: 4em;
-    }
 
-    header {
-        padding: 5%;
-        font-size: 20px;
-        background-repeat: no-repeat;
-    }
-
-    .container {
-        background: #222 url(../images/main-banner.jpg);
-        background-size: cover;
-        background-color: #222;
+    .welcome {
+        background: url(../images/main-banner.jpg);
         height: 500px;
-    }
-
-    .banner {
-        height: 300px;
-        padding-left: 10%;
-        padding-right: 10%;
+        display: block;
         background-position: -50% 50%;
     }
 
-    #about-us {
+    .banner h1 p {
+        background-color: #222;
+        padding: 10%;
+        border: 25px;
+    }
+
+    .banner .btn {
+        background-color: #c78c06;
+        margin-top: 10px;
+        padding: 3%;
+        text-decoration: none;
+        color: #222;
+    }
+
+    /* About Us */
+
+    .about-us {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row: inherit;
+        column-gap: 1em;
     }
 
     /* Our Services */
     .services {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 0.5fr 7fr 6fr;
+        grid-template-rows: repeat(3, auto);
         grid-template-areas:
             "head head head head head head"
             "digi digi digi market market market"
@@ -413,38 +387,32 @@ th {
         gap: 1em;
     }
 
-    .card {
-        margin: 0;
-    }
-
     .services h2 {
         grid-area: head;
     }
 
-    .info {
+    .services .info {
         grid-area: digi;
     }
 
-    .info1 {
+    .services .info1 {
         grid-area: market;
     }
 
-    .info2 {
+    .services .info2 {
         grid-area: video;
     }
 
-    .info3 {
+    .services .info3 {
         grid-area: web;
     }
 
-    .info4 {
+    .services .info4 {
         grid-area: print;
     }
 
     .services div {
         background-color: #ffe6ac;
-        padding: 4%;
-        margin: 0 0 15px 0;
     }
 
     .services .btn {
@@ -452,53 +420,50 @@ th {
         background-color: #222;
         color: white;
         text-decoration: none;
-        padding: 2%;
+        padding: 3%;
+    }
+
+    .fa-play {
+        padding-left: 3%;
     }
 
     /* Our Vision */
     .vision {
+        display:;
         background: url(../images/vision.jpg);
-        background-size: cover;
+        background-size:cover;
         color: white;
         font-family: "Open Sans", sans-serif;
-        height: 200px;
+        height: 300px;
         background-position: -50% 30%;
+        padding: 2em 1em 0em 1em;
     }
 
     .vision .btn {
         background-color: #222;
         text-decoration: none;
-        padding: 5%;
+        padding: 2%;
         border: 1px solid #c78c06;
         color: white;
     }
 
-    .vision h3,
-    .vision p {
-        max-width: 1200px;
-        margin: 0 auto;
-        font-family: "Open Sans", sans-serif;
+    .vision div p {
+        line-height: 1.5em;
+        padding-bottom: 5em;
     }
 
     /* Our Team */
-    #team {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
     .our-team {
-        margin: 0 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        line-height: 1.5em;
+        margin-bottom: 5px;
     }
 
-    .our-team {
-        grid-column: 2;
+    .our-team div p {
+        grid-column: 1;
         grid-row: 2;
-        background-color: #ffe6ac;
-        font-family: "Open Sans", sans-serif;
-        line-height: 1.5;
     }
 
     .our-team img {
@@ -506,15 +471,38 @@ th {
     }
 
     /* Contact Us*/
-    .contact .width {
-        margin: 0 auto;
+    .contact {
         max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "contact contact"
+            "message map"
+            "table table";
+            gap: 2em;
+    }
+
+    #contact h2 {
+        grid-area: contact;
+    }
+
+    .message {
+        grid-area: message;
+    }
+    
+    .map {
+        grid-area: map;
+    }
+
+    .table {
+        grid-area: table;
     }
 
     form {
         width: 98%;
         padding: 1%;
-        border: 1px solid #191919;
     }
 
     input[type=text],
@@ -522,7 +510,6 @@ th {
         width: 100%;
         padding: 10px 20px;
         margin: 0.5em 1em 0em 0em;
-        display: inline-block;
         border: 1px solid #d5cfcf;
         border-radius: 4px;
         box-sizing: border-box;
@@ -538,31 +525,18 @@ th {
         box-sizing: border-box;
     }
 
+    caption {
+        font-size: 1.6em;
+        font-weight: 700;
+        margin: 10px;
+        text-align: left;
+    }
+
     button {
         padding: 0.5%;
-        margin: 1em;
+        margin: 0;
         background-color: #222;
         color: #c78c06;
-    }
-
-    .table {
-        border: 1px solid #222;
-        text-align: center;
-    }
-
-    th,
-    td {
-        border: 1px solid #222;
-    }
-
-    .head {
-        background-color: #c78c06;
-        font-size: 25px;
-        font-style: bold;
-    }
-
-    .map {
-        float: right;
     }
 
     /* Site footer*/
@@ -575,4 +549,8 @@ th {
         max-width: 1200px;
     }
 }
+
+
+
+
 
